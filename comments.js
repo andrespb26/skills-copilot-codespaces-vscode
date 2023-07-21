@@ -9,7 +9,3 @@ router.get('/', function (req, res) {
         res.render('comments', {comments: docs});
     })
 });
-
-router.post('/', function (req, res) {
-    var comment = {
-        text: req.body.text,
